@@ -1,15 +1,22 @@
-import pytest 
+import pytest
 import calculator
+import sys
 
 
-class TestCalculator:
-    def test_addition(self):
-         pass
-    def test_subtraction(self):
-        pass 
-    def test_division(self):
-        pass
-    def test_multiply():
-        pass
+
+def test_addition():
+    assert 10 == calculator.add(5, 5)
+        
+
+def test_subtraction():
+    assert 10 == calculator.subtract(20, 10)
+
+def test_division():
+    assert 2 == calculator.divide(4, 2)
+    
+
+def test_multiply():
+    assert 25 == calculator.multiply(5, 5)
+        
     
     
