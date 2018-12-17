@@ -1,33 +1,29 @@
 
 class Calculator:
-    
-    def __init__(self):
-        self.value1 = int(input("enter a number"))
-        self.value2 = int(input("enter a number"))
 
-    def add(self):
+    def add(self, value1=int, value2=int):
         #add the two numbers a user inputs then prints out the result
-        print(self.value1 + self.value2)
+        print(value1 + value2)
     
-    def divide(self):
-        # divide two numbers a user inputs then prints the result 
-        print(self.value1 // self.value2) 
-    def subtract(self):
+    def divide(self, value1, value2):
+        # divide two numbers a user inputs then prints the result
+        print( value1 // value2 )
+   
+    def subtract(self, value1=int, value2=int):
         # subtract two numbers a user inputs then prints the result 
-        print(self.value1 - self.value2)
-        
+        print(value1  - value2)
 
-    def multiply(self):
+    def multiply(self,value1=int, value2=int):
         # multiply the two numbers a users inputs then prints the results
-        print(self.value1 * self.value2) 
+        print( value1 * value2)
         
 
 
 if __name__ == "__main__":
 
     new_calculator = Calculator()
-    new_calculator.add()
-    new_calculator.subtract()
-    new_calculator.divide()
-    new_calculator.multiply()
+    new_calculator.add(5,5)
+    new_calculator.subtract(10, 5)
+    new_calculator.divide(4,2)
+    new_calculator.multiply(10,2)
     
